@@ -1,0 +1,47 @@
+body{
+    background-color: #1a040401;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.loading-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Loading{
+    animation: spin 3s linear infinite;
+    border: 16px solid #100f0f;
+    border-top: 16px solid #ca3210;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+.loading-text{
+    font-size: 20px;
+    color: #3498db;
+    margin-top: 20px;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
